@@ -12,12 +12,12 @@ imagem apresentada..
 Baseado na descrição do texto base, escolha e crie um componente funcional em
 React JS:
 
-<img src="assets/Componente-de-produto.png" alt="Image" height="300">
+<img src="src/assets/enunciado.png" alt="Image" height=60%>
 
 ## Resultado final
 
-![CardProduto.png](assets/CardProduto.png "Imagem do componente criado. 3 cards contendo informações do lanche e a imagem do lanche ao lado.")
-
+![card-produto.png](assets/card-produto.png "Imagem do componente criado. 3 cards contendo informações do lanche e a imagem do lanche ao lado.")
+ 
 Componente criado executado no celular:
 
-<img src="assets/Componente_criado_executado_no_celular.gif" alt="Image" height="500">
+<img src="assets/Componente_criado_executado_no_celular.gif" alt="Gif" height="500">

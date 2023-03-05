@@ -1,20 +1,30 @@
 #root {
-  max-width: 1280px;
+  border: 1px solid white;
+  /* max-width: 1280px; */
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
+.titulo {
+  font-size: medium;
+}
+.subtitulo {
+  font-size: xx-small;
+}
 
 .logo {
+  border: 1px solid white;
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
 .logo:hover {
+  border: 1px solid white;
   filter: drop-shadow(0 0 2em #646cffaa);
 }
 .logo.react:hover {
+  border: 1px solid white;
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
@@ -33,10 +43,7 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
-
 .read-the-docs {
+  border: 1px solid white;
   color: #888;
 }
