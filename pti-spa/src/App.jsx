@@ -1,38 +1,47 @@
-import reactLogo from './assets/react.svg'
 import './App.css'
 import CardProduto from './components/CardProduto'
-// import Header from './components/Header'
-// import Titulo from './components/Titulo'
-// import Footer from './components/Footer'
+import Header from './components/Header'
+import Titulo from './components/Titulo'
+import Footer from './components/Footer'
 
 function App() {
+  const dishes01 = {
+    nome: 'Beef Burguer',
+    descricao: 'Juicy beef patty served on a bun..',
+    valor: '12.00',
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfNr83Gs2YzJiE4B12zJNyvvoJh9qxKl3fTw&usqp=CAU',
+  };
+  const dishes02 = {
+    nome: 'Pancakes',
+    descricao: 'Fluffy, round cakes made from batter.',
+    valor: '15.00',
+    img: 'https://static.vecteezy.com/system/resources/thumbnails/002/482/982/small_2x/breakfast-pancakes-hand-draw-and-line-style-icon-design-free-vector.jpg',
+  };
+  const dishes03 = {
+    nome: 'French Fries',
+    descricao: 'Thin, crispy slices of fried potatoes.',
+    valor: '10.00',
+    img: 'https://thumbs.dreamstime.com/b/french-fries-flying-to-paper-box-sketch-style-hand-drawn-illustration-fried-potato-fast-food-retro-artwork-vector-image-isolated-256585715.jpg',
+  };
 
   return (
     <div className="App">
-      {/* <Header /> */}
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      {/* <Titulo /> */}
-      <div>
-        <h1 className='titulo'>Popular dishes with delivery</h1>
-        <h2 className='subtitulo'>
-          Description Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </h2>
-      </div>
-
-      <CardProduto />
-
-      {/* <Footer /> */}
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Header />
+      <Titulo />
+      <section>
+        <section className='container'>
+          <CardProduto dishes={dishes01} />
+          <CardProduto dishes={dishes02} />
+          <CardProduto dishes={dishes03} />
+          <CardProduto dishes={dishes01} />
+          <CardProduto dishes={dishes02} />
+          <CardProduto dishes={dishes03} />
+          <CardProduto dishes={dishes01} />
+          <CardProduto dishes={dishes02} />
+          <CardProduto dishes={dishes03} />
+        </section>
+      </section>
+      <Footer />
     </div>
   )
 }

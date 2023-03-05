@@ -1,20 +1,17 @@
-import { useState } from 'react'
 import './CardProduto.css'
 
-
-export default function CardProduto() {
-    // const [count, setCount] = useState(0)
+export default function CardProduto(props) {
     return (
         <div className="card">
-            {/* <button onClick={() => setCount((count) => count + 1)}>
-                count is {count}
-            </button> */}
-            <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-            <p>
-            Feijoada is a stew of beans with beef and pork.
-            </p>
+            <img
+                src={props.dishes.img}
+                className="imagem"
+                alt={props.dishes.nome}
+            />
+            <div className='text'>
+                <p>{props.dishes.descricao}</p>
+                <p className='valor'>$ {props.dishes.valor}</p>
+            </div>
         </div>
     )
 }
