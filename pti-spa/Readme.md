@@ -18,6 +18,6 @@ React JS:
 
 <img src="src/assets/card-produto.png" alt="Image" height=220>
  
-Componente criado executado no celular:
+Componente criado executado no navegador:
 
 <img src="src/assets/component-gif.gif" alt="Gif" height=50%>
